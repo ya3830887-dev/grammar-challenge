@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grammar Challenge - Prep 3</title>
+<style>
+:root{--bg:#0f1624;--card:#17213a;--tx:#f1f5f9;--bl:#5b8def;--gr:#22a05a;--ye:#f5b800;--rd:#e5484d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;min-height:100vh}
+header{background:var(--bl);padding:10px 14px;font-weight:700;font-size:clamp(18px,5vw,26px)}
+header small{display:block;font-size:.7em;margin-top:6px}
+main{max-width:560px;margin:0 auto;padding:14px}
+.box{border:2px solid var(--ye);background:var(--card);border-radius:12px;padding:14px;text-align:center;margin-top:20px}
+.ayah{color:var(--bl);font-size:clamp(20px,5.5vw,28px);line-height:1.9;direction:rtl}
+.t{font-size:clamp(20px,5.5vw,28px);font-weight:700;margin:6px 0;direction:rtl}
+.ph{color:var(--gr);font-size:clamp(20px,6vw,30px);font-weight:700;letter-spacing:2px}
+input{width:80%;max-width:320px;padding:12px;font-size:20px;text-align:center;background:var(--bg);color:var(--tx);border:1px solid #2d3b5c;border-radius:8px}
+button{font:inherit;cursor:pointer;border:0;border-radius:10px;color:#fff;background:var(--bl);padding:12px 22px;font-weight:700}
+.tp{display:block;width:100%;margin:10px 0;padding:16px}.tp small{display:block;font-weight:400;opacity:.9}
+.c{text-align:center}
+.bar{height:8px;background:#2d3b5c;border-radius:4px;margin:6px 0 14px}.bar i{display:block;height:100%;background:var(--gr);border-radius:4px}
+.q{font-size:clamp(19px,5vw,24px);line-height:1.5;margin:10px 0 16px;font-weight:600}
+.lb{color:var(--ye);font-size:15px}
+.op{display:block;width:100%;text-align:left;background:var(--card);border:2px solid #2d3b5c;margin:9px 0;padding:14px;font-weight:500;font-size:clamp(16px,4.4vw,20px)}
+.op.ok{border-color:var(--gr);background:#143824}.op.no{border-color:var(--rd);background:#3d1a1d}
+.big{font-size:64px;font-weight:800;color:var(--ye)}
+.wa{background:#25d366;display:block;width:100%;margin:14px 0}
+</style></head><body>
+<header id="h">Grammar Challenge - Prep 3<small id="who"></small></header>
+<main id="m"></main>
+<script>
+const T={tc:"Third Conditional (If)",pp:"Present Perfect (active & passive)",wl:"Will: Passive & Active"};
+const D={tc:[],pp:[],wl:[]};
+const Q=(k,q,a,...w)=>D[k].push({q,a,w});
+const R=(k,s,wd,a,...w)=>Q(k,s+"\nRewrite using ("+wd+"):",a,...w);
+// Third conditional
+R("tc","Adam didn't drive carefully, so he didn't avoid the accident.","If","If Adam had driven carefully, he would have avoided the accident.","If Adam drove carefully, he would avoid the accident.","If Adam had driven carefully, he would avoid the accident.","If Adam would have driven carefully, he had avoided the accident.");
+R("tc","Kamal didn't train hard so he lost the match.","If","If Kamal had trained hard, he wouldn't have lost the match.","If Kamal trained hard, he wouldn't lose the match.","If Kamal had trained hard, he wouldn't lose the match.","If Kamal would have trained hard, he hadn't lost the match.");
+R("tc","He didn't catch the train because he was late.","If","If he hadn't been late, he would have caught the train.","If he wasn't late, he would catch the train.","If he hadn't been late, he would catch the train.","If he wouldn't have been late, he had caught the train.");
+R("tc","I didn't write the paragraph so the teacher was angry.","If","If I had written the paragraph, the teacher wouldn't have been angry.","If I wrote the paragraph, the teacher wouldn't be angry.","If I had written the paragraph, the teacher wouldn't be angry.","If I would have written the paragraph, the teacher hadn't been angry.");
+R("tc","She didn't catch the train as she got up late.","If","If she hadn't got up late, she would have caught the train.","If she didn't get up late, she would catch the train.","If she hadn't got up late, she would catch the train.","If she wouldn't have got up late, she had caught the train.");
+R("tc","He arrived late so he didn't catch the bus.","If","If he hadn't arrived late, he would have caught the bus.","If he didn't arrive late, he would catch the bus.","If he hadn't arrived late, he would catch the bus.","If he wouldn't have arrived late, he had caught the bus.");
+R("tc","She didn't avoid the accident because she hadn't driven carefully.","If","If she had driven carefully, she would have avoided the accident.","If she drove carefully, she would avoid the accident.","If she had driven carefully, she would avoid the accident.","If she would have driven carefully, she had avoided the accident.");
+const C=(k,s,a,...w)=>Q(k,"Complete with the correct form:\n"+s,a,...w);
+C("tc","If I had bought an umbrella, I ____ (not - get) wet.","wouldn't have got","didn't get","wouldn't get","hadn't got");
+C("tc","If he had trained well, he ____ (play) the match.","would have played","would play","had played","played");
+C("tc","If she had studied hard, she ____ (pass) her exams.","would have passed","would pass","had passed","passed");
+C("tc","If he had studied harder, he ____ (pass) the exam.","would have passed","would pass","had passed","passes");
+C("tc","If Ali ____ (study) more, he would have passed the exam.","had studied","studied","would study","has studied");
+C("tc","If he had driven carefully, he ____ (avoid) the accident.","would have avoided","would avoid","had avoided","avoided");
+C("tc","If we had left earlier, we ____ (catch) the bus.","would have caught","would catch","had caught","caught");
+C("tc","If Salma ____ (study) harder last year, she would have passed the exam.","had studied","studied","would study","has studied");
+C("tc","If students ____ (be) more respectful, classroom management would have been easier.","had been","were","would be","have been");
+C("tc","If she had studied harder, she ____ (pass) the exam.","would have passed","would pass","had passed","passed");
+C("tc","If Ali ____ (study) hard, he would have succeeded.","had studied","studied","would study","studies");
+C("tc","If Karim ____ (drive) carefully, he would have avoided the accident.","had driven","drove","would drive","has driven");
+C("tc","If Omar ____ (study) more, he would have passed the exam.","had studied","studied","would study","has studied");
+// Present perfect
+const F=(s,wd,a,...w)=>R("pp",s,wd,a,...w);
+F("I have studied English since 2015.","for","I have studied English for a long time.","I have studied English for 2015.","I have studied English since a long time.","I studied English for since 2015.");
+F("I have already done my homework.","yet","I haven't done my homework yet.","I have done my homework yet.","I haven't done my homework already.","I didn't have done my homework yet.");
+F("Mazen has lived in Qena since 2016.","for","Mazen has lived in Qena for ten years.","Mazen has lived in Qena for 2016.","Mazen has lived in Qena since ten years.","Mazen lives in Qena for since 2016.");
+F("I have lived in Mansoura since 2021.","for","I have lived in Mansoura for five years.","I have lived in Mansoura for 2021.","I have lived in Mansoura since five years.","I lived in Mansoura for five years ago.");
+F("I've spoken English since 2010.","for","I've spoken English for many years.","I've spoken English for 2010.","I've spoken English since many years.","I spoke English for many years ago.");
+F("He has lived in Ismailia since 2020.","for","He has lived in Ismailia for six years.","He has lived in Ismailia for 2020.","He has lived in Ismailia since six years.","He lives in Ismailia for six years ago.");
+F("I have seen that movie already.","yet","I haven't seen that movie yet.","I have seen that movie yet.","I haven't seen that movie already.","I didn't saw that movie yet.");
+F("Farida has learned English for five years.","since","Farida has learned English since 2021.","Farida has learned English since five years.","Farida has learned English for 2021.","Farida learned English since for 2021.");
+F("I have lived in Sohag since 2000.","for","I have lived in Sohag for 26 years.","I have lived in Sohag for 2000.","I have lived in Sohag since 26 years.","I lived in Sohag for 26 years ago.");
+F("I haven't seen a lion.","never","I have never seen a lion.","I never have seen a lion.","I haven't never seen a lion.","I have ever seen a lion.");
+F("I have spoken English since 2020.","for","I have spoken English for six years.","I have spoken English for 2020.","I have spoken English since six years.","I spoke English for six years ago.");
+C("pp","We ____ (has) lived in this city since 2017.","have","has","had","having");
+C("pp","They haven't phoned us ____ the last holiday. (for)","since","for","in","at");
+C("pp","They ____ (finish) the project yet.","haven't finished","have finished","didn't finished","hasn't finished");
+C("pp","Logy ____ (has) tidied her room yet.","hasn't","haven't","hadn't","didn't");
+C("pp","I have known him since we ____ (be) children.","were","are","have been","had been");
+C("pp","I have ____ been to Europe. I wish I could.","never","already","ever","yet");
+C("pp","I have ____ been to London. I wish I could.","never","already","ever","yet");
+const P=(k,s,wd,a,...w)=>R(k,s,wd,a,...w);
+P("pp","The government has already opened the Great Egyptian Museum.","been","The Great Egyptian Museum has already been opened by the government.","The Great Egyptian Museum has already opened by the government.","The Great Egyptian Museum have already been opened by the government.","The Great Egyptian Museum was already been opened by the government.");
+P("pp","Mona has cleaned the house.","The house","The house has been cleaned by Mona.","The house has cleaned by Mona.","The house have been cleaned by Mona.","The house is been cleaned by Mona.");
+P("pp","The teacher has already explained the lesson.","been","The lesson has already been explained by the teacher.","The lesson has already explained by the teacher.","The lesson have already been explained by the teacher.","The lesson will already been explained by the teacher.");
+P("pp","I have done my homework.","My","My homework has been done by me.","My homework have been done by me.","My homework has been do by me.","My homework has done by me.");
+P("pp","We haven't cooked lunch yet.","been","Lunch hasn't been cooked yet.","Lunch haven't been cooked yet.","Lunch hasn't cooked yet.","Lunch hasn't been cook yet.");
+P("pp","Many tourists have visited the museum.","been","The museum has been visited by many tourists.","The museum have been visited by many tourists.","The museum has visited by many tourists.","The museum has been visit by many tourists.");
+// Will
+const W=(s,wd,a,...w)=>R("wl",s,wd,a,...w);
+W("We will finish the project next Friday.","The project .......","The project will be finished next Friday.","The project will finished next Friday.","The project will be finish next Friday.","The project is finished next Friday.");
+W("We will finish this homework next Friday.","be","This homework will be finished next Friday.","This homework will finished next Friday.","This homework will be finish next Friday.","This homework will been finished next Friday.");
+W("We will invite a lot of guests to tomorrow's party.","invited","A lot of guests will be invited to tomorrow's party.","A lot of guests will invited to tomorrow's party.","A lot of guests will be invite to tomorrow's party.","A lot of guests are invited to tomorrow's party.");
+W("They will build a new hospital in our town next year.","A new hospital .......","A new hospital will be built in our town next year.","A new hospital will built in our town next year.","A new hospital will be build in our town next year.","A new hospital is built in our town next year.");
+W("The teacher will correct the test tomorrow.","corrected","The test will be corrected by the teacher tomorrow.","The test will corrected by the teacher tomorrow.","The test will be correct by the teacher tomorrow.","The test has been corrected by the teacher tomorrow.");
+W("The teacher will check the exam papers tomorrow.","checked","The exam papers will be checked by the teacher tomorrow.","The exam papers will checked by the teacher tomorrow.","The exam papers will be check by the teacher tomorrow.","The exam papers are checked by the teacher tomorrow.");
+W("We will finish this project next Friday.","be","This project will be finished by us next Friday.","This project will finished by us next Friday.","This project will be finish by us next Friday.","This project will been finished by us next Friday.");
+W("Hassan won't sell the mobile tomorrow.","be sold","The mobile won't be sold by Hassan tomorrow.","The mobile won't sold by Hassan tomorrow.","The mobile won't be sell by Hassan tomorrow.","The mobile isn't sold by Hassan tomorrow.");
+W("She will send the letter next week.","be","The letter will be sent by her next week.","The letter will sent by her next week.","The letter will be send by her next week.","The letter will been sent by her next week.");
+W("My father will fix the car tomorrow.","The car","The car will be fixed by my father tomorrow.","The car will fixed by my father tomorrow.","The car will be fix by my father tomorrow.","The car is fixed by my father tomorrow.");
+C("wl","In the future, a lot of driverless cars ____ (use) everywhere.","will be used","will use","are used","will be use");
+C("wl","The new library will be ____ (build) next month.","built","build","building","builded");
+C("wl","We will ____ (used) driverless cars.","use","used","be used","using");
+C("wl","I hope my car ____ (repair) tomorrow.","will be repaired","will repair","is repaired","will be repair");
+C("wl","My brother ____ (study) engineering next year.","will study","will be studied","is study","studied");
+C("wl","We will ____ (used) driverless cars in the future.","use","used","be used","using");
+C("wl","I think my brother ____ (study) engineering next year.","will study","will be studied","is study","studied");
+C("wl","The English lesson will ____ (explain) tomorrow.","be explained","explain","explained","be explain");
+C("wl","The Monorail will ____ (finish) next year.","be finished","finish","finished","be finish");
+C("wl","The new school ____ (is) built next year.","will be","is","was","has been");
+
+const m=document.getElementById("m"),who=document.getElementById("who");
+let name="",tp="",qs=[],i=0,sc=0,lock=false;
+const sh=a=>{a=[...a];for(let j=a.length-1;j>0;j--){const k=Math.random()*(j+1)|0;[a[j],a[k]]=[a[k],a[j]]}return a};
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+function home(){who.textContent="";m.innerHTML=`<div class="box"><div class="ayah">﴿ إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا ﴾</div><div class="t">طلاب مستر يوسف الوكيل</div><div class="ph">01098102012</div></div>
+<p class="c" style="font-size:20px">Welcome! Write your name to start:</p><div class="c"><input id="n" placeholder="Your name" maxlength="30" autocomplete="off"><br><br><button id="go">Start</button></div>`;
+const go=()=>{const v=document.getElementById("n").value.trim();if(!v){document.getElementById("n").focus();return}name=v;menu()};
+document.getElementById("go").onclick=go;document.getElementById("n").onkeydown=e=>{if(e.key==="Enter")go()}}
+function menu(){who.textContent=name;const all=[...D.tc,...D.pp,...D.wl];
+m.innerHTML=`<p style="font-size:22px">Hi ${esc(name)}! Choose a topic:</p>`+Object.keys(T).map(k=>`<button class="tp" data-k="${k}">${T[k]}<small>${D[k].length} questions</small></button>`).join("")+`<button class="tp" style="background:var(--gr)" data-k="all">Mixed Challenge (all)<small>${all.length} questions</small></button><button class="tp" style="background:var(--ye);color:#222" data-k="quick">Quick Round<small>10 random questions</small></button>`;
+m.querySelectorAll(".tp").forEach(b=>b.onclick=()=>start(b.dataset.k))}
+function start(k){const all=[...D.tc,...D.pp,...D.wl];
+tp=k==="all"?"Mixed Challenge":k==="quick"?"Quick Round":T[k];
+qs=k==="all"?sh(all):k==="quick"?sh(all).slice(0,10):sh(D[k]);i=0;sc=0;show()}
+function show(){lock=false;const q=qs[i],o=sh([q.a,...q.w]);const [body,lab]=q.q.split("\n");
+const parts=q.q.split("\n");const label=parts.pop();const text=parts.join("<br>");
+m.innerHTML=`<div class="c" style="opacity:.8">${esc(tp)} · ${i+1}/${qs.length} · Score ${sc}</div><div class="bar"><i style="width:${i/qs.length*100}%"></i></div>
+<div class="q">${esc(parts.join("\n")).replace(/\n/g,"<br>")}<div class="lb">${esc(label)}</div></div><div id="o"></div><div id="nx" class="c"></div>`;
+const box=document.getElementById("o");
+o.forEach(t=>{const b=document.createElement("button");b.className="op";b.textContent=t;b.onclick=()=>pick(b,t,q);box.appendChild(b)})}
+function pick(b,t,q){if(lock)return;lock=true;const ok=t===q.a;if(ok)sc++;
+document.querySelectorAll(".op").forEach(x=>{if(x.textContent===q.a)x.classList.add("ok")});if(!ok)b.classList.add("no");
+const n=document.getElementById("nx");n.innerHTML=`<p>${ok?"✅ Correct!":"❌ Wrong. The correct answer is highlighted."}</p><button id="nb">${i+1<qs.length?"Next":"See result"}</button>`;
+document.getElementById("nb").onclick=()=>{i++;i<qs.length?show():end()};n.scrollIntoView({behavior:"smooth",block:"end"})}
+function end(){const p=Math.round(sc/qs.length*100);
+const msg=p>=90?"Excellent! 🌟":p>=70?"Very good! 👏":p>=50?"Good, keep practicing 💪":"Keep trying, you can do it! 📚";
+const text=`Grammar Challenge - Prep 3\nName: ${name}\nTopic: ${tp}\nScore: ${sc}/${qs.length} (${p}%)`;
+who.textContent=name;
+m.innerHTML=`<div class="box"><div class="big">${sc}/${qs.length}</div><div style="font-size:22px">${p}% — ${msg}</div><p>${esc(name)}<br>${esc(tp)}</p></div>
+<a class="wa" style="text-decoration:none"><button class="wa" style="margin:14px 0" id="w">📲 Share score on WhatsApp</button></a>
+<button class="tp" id="again">Choose another topic</button>`;
+document.getElementById("w").onclick=()=>window.open("https://wa.me/201098102012?text="+encodeURIComponent(text),"_blank");
+document.getElementById("again").onclick=menu}
+home();
+</script></body></html>
